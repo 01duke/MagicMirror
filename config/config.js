@@ -43,10 +43,12 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "UP COMING EVENTS",
 			position: "top_left",
 			config: {
 				calendars: [{
+					maximumEntries:"15",
+					fade: "false",
 					symbol: "calendar-check",
 					url: "https://calendar.google.com/calendar/ical/miriam.duke%40gmail.com/private-529fa6b268af6d096511e1cc0d169a13/basic.ics"
 				}]
@@ -58,10 +60,10 @@ var config = {
 		// npm install
 		{
 			module: "MMM-GooglePhotos",
-			position: "middle_center",
+			position: "bottom_center",
 			config: {
 
-				albumId: ["ALBUM_ID1", "ALBUM_ID2"], // your album id(s) from result of `auth_and_test.js`
+				albumId: ["AIniX88YjZ__20KsVuZMc0TCQ42ffFCwDJJR8CBh-Oqr9muGC_ackOlTtxCmBibQqZJHOQWgO4DU"], // your album id(s) from result of `auth_and_test.js`
 				refreshInterval: 1000 * 60, // Number of milliseconds before showing a different photo
 				scanInterval: 1000 * 60 * 10, // too many scans might cause API quota limit also
 				//note(2018-07-29). It is some weird. API documents said temporal image url would live for 1 hour, but it might be broken shorter. So, per 10 min scanning could prevent dead url.
@@ -92,32 +94,13 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
+				fade: "false",
 				location: "Idaho Falls",
 				locationID: "5596475", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "9ad9ed31fe50ebed3f38ca3907a8dba7"
 			}
-		},
-		{
-			module: "MMM-GooglePhotos",
-			position: "bottom_right",
-			config: {
+		}
 
-				albumId: ["ALBUM_ID1", "ALBUM_ID2"], // your album id(s) from result of `auth_and_test.js`
-				refreshInterval: 1000 * 60, // Number of milliseconds before showing a different photo
-				scanInterval: 1000 * 60 * 10, // too many scans might cause API quota limit also
-				//note(2018-07-29). It is some weird. API documents said temporal image url would live for 1 hour, but it might be broken shorter. So, per 10 min scanning could prevent dead url.
-
-				sort: "time", //'time', 'reverse', 'random'
-				showWidth: "800px", // how large the photo will be shown as. (e.g;'100%' for fullscreen)
-				showHeight: "600px",
-				originalWidthPx: 800, // original size of loaded image. (related with image quality)
-				originalHeightPx: 600, // Bigger size gives you better quality, but can give you network burden
-				opacity: 1, // target "opacity" property (https://www.w3schools.com/cssref/css3_pr_opacity.asp)
-				mode: "hybrid", // "cover" or "contain" (https://www.w3schools.com/cssref/css3_pr_background-size.asp)
-				// "hybrid": will change "cover" and "contain" automatically based on aspect ratio
-				showDateLabel: true, // If True, shows a label of how long ago the photo was taken (e.g. 2 years ago, 7 days ago, etc...)
-			}
-		},
 	]
 
 };
