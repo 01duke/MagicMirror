@@ -9,29 +9,21 @@
  */
 
 var config = {
-<<<<<<< HEAD
 	address: "0.0.0.0", // Address to listen on, can be:
-=======
-	address: "localhost", // Address to listen on, can be:
->>>>>>> e9e2dc55b64406a6eba38dfcb08286a34f39a5f9
 	// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
 	// - another specific IPv4/6 to listen on a specific interface
 	// - "", "0.0.0.0", "::" to listen on any interface
 	// Default, when address config is left out, is "localhost"
 	port: 8080,
-<<<<<<< HEAD
 	ipWhitelist: [], // Set [] to allow all IP addresses
-=======
-	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses
->>>>>>> e9e2dc55b64406a6eba38dfcb08286a34f39a5f9
 	// or add a specific IPv4 of 192.168.1.5 :
 	// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 	// or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
 	// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
 	language: "en",
-	timeFormat: 24,
-	units: "metric",
+	timeFormat: 12,
+	units: "imperial",
 	// serverOnly:  true/false/"local" ,
 	// local for armv6l processors, default 
 	//   starts serveronly and then starts chrome browser
@@ -56,7 +48,7 @@ var config = {
 			config: {
 				calendars: [{
 					symbol: "calendar-check",
-					url: "https://calendar.google.com/calendar/ical/shane.duke88%40gmail.com/private-6099dddf6f4ad23946a53b1d9f57d728/basic.ics"
+					url: "https://calendar.google.com/calendar/ical/miriam.duke%40gmail.com/private-529fa6b268af6d096511e1cc0d169a13/basic.ics"
 				}]
 			}
 		},
