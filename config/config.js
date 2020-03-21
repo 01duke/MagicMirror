@@ -22,8 +22,8 @@ var config = {
 	// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
 	language: "en",
-	timeFormat: 24,
-	units: "metric",
+	timeFormat: 12,
+	units: "imperial",
 	// serverOnly:  true/false/"local" ,
 	// local for armv6l processors, default 
 	//   starts serveronly and then starts chrome browser
@@ -50,7 +50,7 @@ var config = {
 					maximumEntries:"15",
 					fade: "false",
 					symbol: "calendar-check",
-					url: "https://calendar.google.com/calendar/ical/shane.duke88%40gmail.com/private-6099dddf6f4ad23946a53b1d9f57d728/basic.ics"
+					url: "https://calendar.google.com/calendar/ical/miriam.duke%40gmail.com/private-529fa6b268af6d096511e1cc0d169a13/basic.ics"
 				}]
 			}
 		},
