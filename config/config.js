@@ -58,6 +58,10 @@ var config = {
 		// git clone https://github.com/eouia/MMM-GooglePhotos.git
 		// cd MMM-GooglePhotos
 		// npm install
+		// create credentials.json
+		// node auth_and_test.js
+		// 4/xQHXwkFpWX9Oj2_IXVMMYbhOZPBQlo3wM4vwSjnnLqV_OSmnI6sCfpA
+		// Family Photos Album ID:  AIniX88YjZ__20KsVuZMc0TCQ42ffFCwDJJR8CBh-Oqr9muGC_ackOlTtxCmBibQqZJHOQWgO4DU
 		{
 			module: "MMM-GooglePhotos",
 			position: "bottom_center",
